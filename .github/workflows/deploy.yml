@@ -1,6 +1,7 @@
 name: Build and deploy
 on:
   push:
+    paths-ignore: ["api/**", ".github/workflows/deploy-api.yml"]
     branches: [ main ]
   workflow_dispatch:
 permissions:
