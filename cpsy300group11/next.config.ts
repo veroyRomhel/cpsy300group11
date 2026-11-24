@@ -3,6 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   output: "standalone",
+  serverExternalPackages: [
+  "@azure/service-bus",
+  "@azure/identity"
+],
   turbopack: {
     rules: {
       "*.css": {
